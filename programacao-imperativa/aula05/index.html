@@ -21,8 +21,8 @@
         
         //Função confirmar a quantidade de dolares para serem cotados
         function confirmar(){
-            var resultado = window.confirm(`Você confirma a cotação de `+`US$`+ quantidadeDolares);
-            if (resultado == true) {
+            var resultado = window.confirm(`Você confirma a cotação de US$ ${quantidadeDolares}?`);
+            if (resultado) {
                 saudar();
             } else {
                 alert(`Você cancelou a operação!`)
