@@ -25,11 +25,17 @@
             if (resultado) {
                 saudar();
             } else {
-                alert(`Você cancelou a operação!`)
+                alert(`Você cancelou a operação!`);
             }
         }
 
+        //Função que redireciona o usuário para a página de compra
+        setTimeout(function() {
+            window.location.href = `https://www.cotacao.com.br/`;
+        }, 5000);
+
         confirmar();
+
 
     </script>
 </body>
