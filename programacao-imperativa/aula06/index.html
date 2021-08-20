@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo IMC</title>
+</head>
+
+<body>
+
+    <h1>Cálculo IMC</h1>
+
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.<br><br>
+        O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.<br><br>
+        Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.<br><br></p>
+
+        <button onclick="invocarFuncoes()">Calcular IMC</button>
+
+    <script>
+
+        //Variáveis
+        var nome = 0;
+        var idade = 0;
+        var peso = 0;
+        var altura = 0;
+        var imc = 0;
+
+        //Inserir Dados
+        function inserirDados(){
+            nome = prompt(`Qual é o seu nome?`);
+            idade = prompt(`${nome} qual é sua idade?`);
+            peso = prompt(`${nome} qual é o seu peso?`);
+            altura = prompt(`${nome} qual é sua altura?`);
+        }
+
+        //Calcula o imc
+        function calculaImc() {
+            imc = Math.round(peso / (altura * altura));
+            alert(`Seu IMC é ${imc}`);
+        }
+
+        //Define a classificação do Imc
+        function informaClassificacao() {
+            if (imc < 18.5) {
+                alert(`Seu IMC está na classificação Magreza, com grau de obesidade 0.`);
+            }
+            if (imc > 18.5 && imc < 24.9){
+                alert(`Seu IMC está na classificação Normal, com grau de obesidade 0.`);
+            }
+            if (imc > 25.0 && imc < 29.9){
+                alert(`Seu IMC está na classificação Sobrepeso, com grau de obesidade I.`);
+            }
+            if (imc > 30.0 && imc < 39.9){
+                alert(`Seu IMC está na classificação Obesidade, com grau de obesidade II.`);
+            }
+            if (imc > 40){
+                alert(`Seu IMC está na classificação Obesidade grave, com grau de obesidade III.`);
+            }
+        }
+
+        function invocarFuncoes(){
+            inserirDados();
+            calculaImc();
+            informaClassificacao();
+        }
+        
+    </script>
+</body>
+
+</html>
