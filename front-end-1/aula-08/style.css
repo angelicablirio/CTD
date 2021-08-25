@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+
+    background-color: #161414;
+
+}
+
+h1, h2, p, .review-score {
+
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+h1 {
+
+    color: #ffffff;
+    
+}
+
+.media-picture {
+
+    background-image: url("harry-potter.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+
+}
+
+.review-score {
+
+    background-color: #ac8d07;
+    color: #ffffff;
+    padding: 12px;
+
+}
+
+h2 {
+
+    color: #3775a8;
+    
+}
+
+p {
+
+    color: #bdbdbd;
+
+}
+
+a {
+
+    color: #eccb37;
+}
