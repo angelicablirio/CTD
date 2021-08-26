@@ -21,76 +21,92 @@
     <script type="text/javascript">
 
         // Variáveis
-        var nome, idade, peso, altura, imc, diaDaSemana, hora, confimacao, horarioMarcado = null;
-        var despedida = 'Muito obrigado por usar o nosso aplicativo!'
+        var usuario = {
+            nome: null,
+            peso: null,
+            altura: null,
+            imc: null,
+            desejaConsultar: null
+        };
+        var agendamento = {
+            diaDaSemana: null,
+            horarioSugerido: null,
+            horarioMarcado: null
+        };
+
+        var mensagemAgradecimento = 'Muito obrigado por usar o nosso aplicativo!'
         
 
-        // Inserir Dados
-        function inserirDados(){
-            nome = prompt('Qual é o seu nome?');
-            peso = prompt(`Qual é o seu peso?`);
-            altura = prompt(`Qual é sua altura?`);
+        // Inserir Dados do usuário
+        function inserirDadosDoUsuario(){
+            usuario.nome = prompt('Qual é o seu nome?');
+            usuario.peso = prompt('Qual é o seu peso?');
+            usuario.altura = prompt('Qual é sua altura?');
         }
 
         // Calcula o imc
-        function calculaImc() {
-            imc = Math.round(peso / (altura * altura));
-            alert(`Seu IMC é ${imc}`);
+        function calculaImcDoUsuario() {
+            usuario.imc = Math.round(usuario.peso / usuario.altura ** 2); // Operador de potência **
+            alert(`Seu IMC é ${usuario.imc}`);
         }
 
         // Define a classificação do Imc
-        function informaClassificacao() {
-            if (imc < 18.5) {
+        function informaClassificacaoDoUsuario() {
+
+            var perfilMagreza = usuario.imc < 18.5;
+            var perfilNormal = usuario.imc > 18.5 && usuario.imc < 24.9;
+            var perfilObesidadeI = usuario.imc > 25.0 && usuario.imc < 29.9;
+            var perfilObesidadeII = usuario.imc > 30.0 && usuario.imc < 39.9;
+
+            if (perfilMagreza) {
                 alert('Seu IMC está na classificação Magreza, com grau de obesidade 0.'); 
-                alert(despedida);
+                alert(mensagemDeAgradecimento);
             }
-            else if (imc > 18.5 && imc < 24.9){
+            else if (perfilNormal){
                 alert('Seu IMC está na classificação Normal, com grau de obesidade 0.');
-                alert(despedida);
+                alert(mensagemDeAgradecimento);
             }
-            else if (imc > 25.0 && imc < 29.9){
+            else if (perfilObesidadeI){
                 alert('Seu IMC está na classificação Sobrepeso, com grau de obesidade I.'); 
-                marcarNutricionista();
+                agendarConsulta();
             }
-            else if (imc > 30.0 && imc < 39.9){
+            else if (perfilObesidadeII){
                 alert('Seu IMC está na classificação Obesidade, com grau de obesidade II.');
-                marcarNutricionista();
+                agendarConsulta();
             }
             else {
                 alert('Seu IMC está na classificação Obesidade grave, com grau de obesidade III.');
-                marcarNutricionista();
+                agendarConsulta();
             }
         }
 
-        //Marcar Nutricionoista
-        function marcarNutricionista(){
-            confimacao = window.confirm(`Olá ${nome} você gostaria de marcar uma consulta na Nutricionista?`);
+        //Agenda consulta com a Nutricionista
+        function agendarConsulta(){
 
-            if (confimacao){
-                diaDaSemana = prompt('Qual dia da semana você gostaria de marcar?');
-                hora = prompt('Qual horário você gostaria de consultar?');
-
-                horarioMarcado = window.confirm(`Você confirma que sua consulta é na ${diaDaSemana} às ${hora} horas ?`)
+                usuario.desejaConsultar = window.confirm(`${usuario.nome}, você gostaria de marcar uma consulta na Nutricionista?`);
+      
+            if (usuario.desejaConsultar){
+                agendamento.diaDaSemana = prompt('Qual dia da semana você gostaria de marcar?');
+                agendamento.horarioSugerido = prompt('Qual horário você gostaria de consultar?');
+                agendamento.horarioMarcado = window.confirm(`Você confirma que sua consulta será na ${agendamento.diaDaSemana} às ${agendamento.horarioSugerido} horas ?`);
                 
-                if(horarioMarcado){
-                    alert(`Obrigada ${nome}, sua consulta esta confirmada para ${diaDaSemana} às ${hora} horas, com o Dra. Luana Nagydai.`)
+                if(agendamento.horarioMarcado){
+                    alert(`Obrigada ${usuario.nome}, sua consulta está confirmada para ${agendamento.diaDaSemana} às ${agendamento.horarioSugerido} horas, com o Dra. Luana Nagydai.`);
                     
-                } else{
-
-                    marcarNutricionista()
+                } else {
+                    agendarConsulta();
                 }
 
-            } else{
-
-                alert(despedida)
+            } else {
+                alert(mensagemDeAgradecimento)
             }
         }
 
         // Inicia as funções do app
         function iniciarAppIMC(){
-            inserirDados();
-            calculaImc();
-            informaClassificacao();
+            inserirDadosDoUsuario();
+            calculaImcDoUsuario();
+            informaClassificacaoDoUsuario();
         }
         
     </script>
