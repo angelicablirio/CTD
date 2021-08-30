@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+body {
+
+    text-align: center;
+}
+
+
+.banner {
+
+    background-image: url("banner-londres.jpg");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1, h2, h3, button {
+
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h1 {
+
+    color:#fdead3;
+
+}
+
+h2, h3 {
+
+    color:#2c55a1;
+
+}
+
+button {
+
+    background-color: #6495ed;
+    border: #6495ed;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#ffe4c4;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+
+}
