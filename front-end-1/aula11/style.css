@@ -1,0 +1,38 @@
+body {
+
+    height: 2000px;
+
+}
+
+.caixa1 {
+
+    background-color: brown;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+
+}
+
+.caixa2 {
+
+    background-color:cornflowerblue;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+
+}
+
+.caixa3 {
+
+    background-color:darkslateblue;
+    bottom: 0px;
+    height: 200px;
+    margin-left: 42%;
+    position: fixed;
+    width: 200px;
+
+}
