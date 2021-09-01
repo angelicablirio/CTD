@@ -66,8 +66,9 @@
         //Função conta letras
 
         function contaLetras () {
-            var tiraEspacos = letraDaMusica.trim();
-            console.log( tiraEspacos.length);
+            var semEspaco = letraDaMusica.replace(/  /g, '').trim();
+            console.log(semEspaco);
+            console.log(semEspaco.length );
         }
 
         //Função conta palavras
