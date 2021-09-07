@@ -1,0 +1,55 @@
+.banner {
+
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 32px;
+    margin-top: 66px;
+    width: 100%;
+
+}
+
+.logo {
+
+    height: 50px;
+    width: 60px;
+    
+}
+
+header {
+
+    align-items: center;
+    background-color: #2992e7;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    left: 0;
+    padding: 8px;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+}
+
+.menu ul {
+
+    display:grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    list-style-type: none;
+}
+
+.menu a {
+
+    color:#cde2f0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.menu a:hover {
+
+    background-color: #1272aa;
+     
+}
