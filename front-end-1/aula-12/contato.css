@@ -26,6 +26,17 @@ form label, form legend, select {
 
 }
 
+
+.input-seletor {
+
+	display: block;
+    font-size: 16px;
+	margin: 0 20px 20px;
+	padding: 8px 20px;
+	width: 20%;
+
+}
+
 .checkbox {
 
 	margin: 20px 20px;

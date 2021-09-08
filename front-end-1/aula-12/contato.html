@@ -40,6 +40,18 @@
         <label for="Mensagem">Mensagem</label>
         <textarea cols="70" rows="10" id="Mensagem"class="input-padrao" required> </textarea>
 
+        <label>Para qual cidade você tem interesse em viajar?</label>
+        <select class="input-seletor" required>
+            <option disabled selected value> -- selecione uma opção -- </option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Berlim">Berlim</option>
+            <option value="Bruxelas">Bruxelas</option>
+            <option value="Irlanda">Irlanda</option>
+            <option value="Londres">Londres</option>
+            <option value="Paris">Paris</option>
+            <option value="Roma">Roma</option>
+        </select>
+
         <fieldset>
             <legend>Como prefere o nosso contato?</legend>
             <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
@@ -52,7 +64,9 @@
         
 			<label class="checkbox"><input type="checkbox"checked>Gostaria de receber nossas novidades por email?</label>
 
-			<input type="submit" value="Enviar formulário" class="enviar">
+            <button type="submit" class="enviar">Enviar formulário</button>
+
+    </form>
 
 </main>
 <footer>
