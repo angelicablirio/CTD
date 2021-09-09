@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <img class="logo" src="logo.png" alt="logo da agencia">
+        <h1>Preencha os dados para entrar em contato conosco</h1>
+
+    </header>
+
+    <form>
+        <label for="Nome e sobrenome">Nome e sobrenome</label>
+        <input type="text" id="Nome e sobrenome" name="Nome e sobrenome" class="input-padrao" required>
+
+        <label for="Data de Nascimento">Data de Nascimento</label>
+        <input type="date" id="Data de Nascimento" name="Data de Nascimento" class="input-padrao" required>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="Telefone">Telefone</label>
+        <input type="tel" id="Telefone" name="Telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="Mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="Mensagem" name="Mensagem" class="input-padrao" required> </textarea>
+
+        <label>Para qual cidade você tem interesse em viajar?</label>
+        <select class="input-seletor" required>
+            <option disabled selected value> -- selecione uma opção -- </option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Berlim">Berlim</option>
+            <option value="Bruxelas">Bruxelas</option>
+            <option value="Irlanda">Irlanda</option>
+            <option value="Londres">Londres</option>
+            <option value="Paris">Paris</option>
+            <option value="Roma">Roma</option>
+        </select>
+        
+        <fieldset>
+            <legend>Como prefere o nosso retorno?</legend>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+        </fieldset>
+        
+			<label class="checkbox"><input type="checkbox"checked>Gostaria de receber nossas novidades por email?</label>
+
+			<button type="submit" class="enviar">Enviar Formulário</button>
+			<button type="reset" class="enviar">Limpar Formulário</button>
+
+    </form>
+
+</body>
+</html>
