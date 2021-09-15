@@ -1,0 +1,67 @@
+.fotos {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.foto {
+
+    padding: 20px 12px;
+    width: 20%;
+    transition-duration: .5s;
+    transition-timing-function:ease-in-out;
+
+}
+
+.foto:hover {
+
+    transform: scale(1.1);
+}
+
+.imagem {
+
+    height: 200px;
+    width: 100%;
+
+}
+
+.titulo-foto {
+
+    color: #550f2a;
+    margin: 8px 0 12px;
+
+}
+
+.descricao-foto {
+
+    color: #961d4b;
+
+}
+
+button {
+
+    background-color:#c90d65;
+    border-color: #c90d65;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px 1px #b9705e98;
+    color: #faf0e6;
+    padding: 10px;
+    transition-duration: .5s;
+
+}
+
+button:hover{
+
+    background-color:#9b0939;
+    border-color:#9b0939;
+    
+}
+
+
+
+
+
