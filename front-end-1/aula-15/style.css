@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap');
+
+body {
+
+    background-image: url("background.jpg");
+    font-family: 'Glory', sans-serif;
+    background-size: cover;
+
+}
+
+.logo{
+
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+
+}
+
+header {
+
+    align-items: center;
+    display: flex;
+    height: 50px;
+    padding: 8px;
+    right: 0;
+    top: 0;
+
+}
+
+h1 {
+
+    color: #1e0f61;
+
+}
+
+h1::first-letter{
+
+    color:#942bc5;
+}
+
+form {
+
+	margin: 40px 0 40px;
+
+}
+
+form label, form legend, select {
+	
+	display: block;
+	font-size: 20px;
+	margin: 5px 20px 10px;
+}
+
+
+input:focus {
+
+    background-color: #d3d6df;
+}
+
+
+input:disabled{
+    
+    background-color: #bb6e6e;
+}
+
+.input-padrao {
+
+	display: block;
+	margin: 0 20px 20px;
+	padding: 10px 20px;
+	width: 50%;
+
+}
+
+.input-seletor {
+
+	display: block;
+    font-size: 16px;
+	margin: 0 20px 20px;
+	padding: 8px 20px;
+	width: 20%;
+
+}
+
+option:nth-child(3){
+
+    color:deeppink;
+}
+
+input:checked { 
+
+    transform: scale(1.5);
+}
+
+.checkbox {
+
+	margin: 20px 0 30px 20px;
+    
+}
+
+.enviar {
+
+	background-color:#f78809;
+    border:none;
+	border-radius: 5px;
+    color: white;
+	cursor: pointer;
+    font-size: 16px;
+    font: bold;
+    margin: 0 20px;
+    padding: 15px 0;
+    transition: 1s;
+    width: 20%;
+
+}
+
+.enviar:hover {
+
+	background: #b15102;
+
+}
+
