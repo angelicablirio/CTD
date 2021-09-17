@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+form {
+
+	margin: 40px 0 40px;
+
+}
+
+form label, form legend, select {
+	
+	display: block;
+	font-size: 20px;
+	margin: 5px 20px 10px;
+}
+
+.primeiro-item{
+	margin-top: 80px;
+}
+
+.input-padrao {
+
+	display: block;
+	margin: 0 20px 20px;
+	padding: 10px 25px;
+	width: 50%;
+
+}
+
+
+.input-seletor {
+
+	display: block;
+    font-size: 16px;
+	margin: 0 20px 20px;
+	padding: 8px 20px;
+	width: 20%;
+
+}
+
+.checkbox {
+
+	margin: 20px 20px;
+
+}
+
+.enviar {
+
+	width: 30%;
+	padding: 15px 0;
+	margin: 0 20px;
+	background-color:#f78809;
+    border:none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+
+}
+
+.enviar:hover {
+
+	background: #d16105;
+
+}
