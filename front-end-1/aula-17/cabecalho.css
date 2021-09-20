@@ -1,0 +1,44 @@
+
+.logo {
+
+    height: 50px;
+    width: 60px;
+    
+}
+
+header {
+
+    align-items: center;
+    background-color: #e0e6eb;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    left: 0;
+    padding: 8px;
+    right: 0;
+    top: 0;
+
+}
+
+.menu ul {
+
+    display:grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    list-style-type: none;
+}
+
+.menu a {
+
+    color:#01080c;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.menu a:hover {
+
+    color: #becad3;
+     
+}

@@ -1,0 +1,44 @@
+.videos {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.video {
+
+    padding: 20px 12px;
+    width: 20%;
+    transition-duration: .5s;
+    transition-timing-function:ease-in-out;
+
+}
+
+.video:hover {
+
+    transform: scale(1.1);
+}
+
+.imagem {
+
+    height: 200px;
+    width: 100%;
+
+}
+
+.titulo-video {
+
+    color: #d3d7e6;
+    margin: 8px 0 12px;
+
+}
+
+.descricao-video {
+
+    color: #dcdfeb;
+    font-size: 12px;
+
+}
