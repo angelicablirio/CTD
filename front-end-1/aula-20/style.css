@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: #f0eedd;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+
+}
+
+body header {
+
+    align-items: center;
+    background-color: #1d0505;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.logo {
+
+    height: 60px;
+    margin-left: 1rem;
+    width: 70px;
+
+}
+
+h1 {
+
+    color: #e1e9ee;
+    font-family: 'Gluten', cursive;
+
+}
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 1rem;
+
+
+}
+
+a {
+
+    color: #e1e9ee;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    color: #e7cc32;
+}
+
+.banner{
+
+    height: calc(100vh - 70px);
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.titulo-sobre { 
+
+    color: #d3a40b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 16px 0 16px 0;
+    text-align: center;
+}
+
+.paragrafo-sobre{
+
+    color: #352c07;
+    margin: 8px 32px 8px 32px;
+    text-align: justify;
+}
+
+.pontos-turisticos{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ponto-turistico {
+
+    margin-left: 16px;
+    padding: 20px 12px;
+    width: 28vw;
+}
+
+.foto {
+
+    height: 250px;
+    width: 100%;
+}
+
+.titulo-ponto-turistico {
+
+    color: #bd930a;
+    font-weight: bold;
+    margin: 8px 0 12px;
+
+}
+
+.titulo-ponto-turistico::after{
+
+    background: #1b1602;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 6px 0 24px 0;
+    width: 80px;
+  
+  }
+
+p {
+
+    color: #352c07;
+}
+
+button {
+
+    background-color:#eed600;
+    border:none;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px 1px #b9705e98;
+    color: #faf0e6;
+    padding: 10px;
+    transition-duration: .5s;
+
+}
+
+button:hover{
+
+    background-color:#d3a117;
+    
+}
+
+body footer {
+
+    background-color: #1d0505;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    grid-area: footer;
+    width: 100%;
+    z-index: 2;
+}
+
+.icone-rodape {
+
+    height: 50px;
+    padding: 0.5rem;
+    width: 50px;
+
+}
+
+/* **************************************************************** */
+
+@media (max-width: 916px){
+
+    .pontos-turisticos{
+
+        flex-direction: column;
+    }
+
+    .ponto-turistico{
+
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 60%;
+    }
+}
+
+
+@media (min-width: 344px) and (max-width: 492px) {
+
+    .ponto-turistico {
+        min-width: 90%;
+    }
+
+}
