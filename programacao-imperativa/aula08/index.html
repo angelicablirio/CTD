@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Cálculo IMC</h1>
+  
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+    <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+    <br><br>
+    <button onclick="iniciarAppIMC()">Calcular IMC</button>
+
+
+    <script type="text/javascript">
+
+        // Variáveis
+        var usuario = {
+            nome: null,
+            peso: null,
+            altura: null,
+            imc: null,
+            desejaConsultar: null
+        };
+        var agendamento = {
+            diaDaSemana: null,
+            horarioSugerido: null,
+            horarioMarcado: null
+        };
+
+        var mensagemAgradecimento = 'Muito obrigado por usar o nosso aplicativo!'
+        
+
+        // Inserir Dados do usuário
+        function inserirDadosDoUsuario(){
+            usuario.nome = prompt('Qual é o seu nome?');
+            usuario.peso = prompt('Qual é o seu peso?');
+            usuario.altura = prompt('Qual é sua altura?');
+        }
+
+        // Calcula o imc
+        function calculaImcDoUsuario() {
+            usuario.imc = Math.round(usuario.peso / usuario.altura ** 2); // Operador de potência **
+            alert(`Seu IMC é ${usuario.imc}`);
+        }
+
+        // Define a classificação do Imc
+        function informaClassificacaoDoUsuario() {
+
+            var perfilMagreza = usuario.imc < 18.5;
+            var perfilNormal = usuario.imc > 18.5 && usuario.imc < 24.9;
+            var perfilObesidadeI = usuario.imc > 25.0 && usuario.imc < 29.9;
+            var perfilObesidadeII = usuario.imc > 30.0 && usuario.imc < 39.9;
+
+            if (perfilMagreza) {
+                alert('Seu IMC está na classificação Magreza, com grau de obesidade 0.'); 
+                alert(mensagemDeAgradecimento);
+            }
+            else if (perfilNormal){
+                alert('Seu IMC está na classificação Normal, com grau de obesidade 0.');
+                alert(mensagemDeAgradecimento);
+            }
+            else if (perfilObesidadeI){
+                alert('Seu IMC está na classificação Sobrepeso, com grau de obesidade I.'); 
+                agendarConsulta();
+            }
+            else if (perfilObesidadeII){
+                alert('Seu IMC está na classificação Obesidade, com grau de obesidade II.');
+                agendarConsulta();
+            }
+            else {
+                alert('Seu IMC está na classificação Obesidade grave, com grau de obesidade III.');
+                agendarConsulta();
+            }
+        }
+
+        //Agenda consulta com a Nutricionista
+        function agendarConsulta(){
+
+                usuario.desejaConsultar = window.confirm(`${usuario.nome}, você gostaria de marcar uma consulta na Nutricionista?`);
+      
+            if (usuario.desejaConsultar){
+                agendamento.diaDaSemana = prompt('Qual dia da semana você gostaria de marcar?');
+                agendamento.horarioSugerido = prompt('Qual horário você gostaria de consultar?');
+                agendamento.horarioMarcado = window.confirm(`Você confirma que sua consulta será na ${agendamento.diaDaSemana} às ${agendamento.horarioSugerido} horas ?`);
+                
+                if(agendamento.horarioMarcado){
+                    alert(`Obrigada ${usuario.nome}, sua consulta está confirmada para ${agendamento.diaDaSemana} às ${agendamento.horarioSugerido} horas, com o Dra. Luana Nagydai.`);
+                    
+                } else {
+                    agendarConsulta();
+                }
+
+            } else {
+                alert(mensagemDeAgradecimento)
+            }
+        }
+
+        // Inicia as funções do app
+        function iniciarAppIMC(){
+            inserirDadosDoUsuario();
+            calculaImcDoUsuario();
+            informaClassificacaoDoUsuario();
+        }
+        
+    </script>
+</body>
+
+</html>

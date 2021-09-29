@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções, operadores matemáticos e lódicos</title>
+</head>
+<body>
+    
+    <!-- Importação do arquivo javascript. -->
+    <script>
+
+        //Variáveis
+        var nomeDoUsuario = prompt('Qual o seu nome?');
+        var quantidadeDolares = prompt('Quantos dólares você gostaria de cotar?');
+        var cotacaoDolarHoje = 5.3;
+
+        //Função com o resultado da cotação caso ele confirme a operação
+        function saudar() {
+            alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`);
+        }
+        
+        //Função confirmar a quantidade de dolares para serem cotados
+        function confirmar(){
+            var resultado = window.confirm(`Você confirma a cotação de US$ ${quantidadeDolares}?`);
+            if (resultado) {
+                saudar();
+            } else {
+                alert(`Você cancelou a operação!`);
+            }
+        }
+
+        //Função que redireciona o usuário para a página de compra
+        setTimeout(function() {
+            window.location.href = `https://www.cotacao.com.br/`;
+        }, 5000);
+
+        confirmar();
+
+
+    </script>
+</body>
+</html>
