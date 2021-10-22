@@ -3,6 +3,8 @@ Repositório dos exercícios realizados nas aulas do Curso de Certified Tech Dev
 
 Conforme as aulas vão evoluindo estamos conseguindo construir projetos mais robustos.
 
+Acesse a gitpages do repositório: https://angelicablirio.github.io/CTD/
+
 O curso Certified Tech Developer é um curso ofertado pela Digital House Brasil em parceria com o Mercado Livre e a Globant. 
 
 O CTD é um curso de 2 anos e meio, voltado diretamente para programação, onde no primeiro ano aprendemos conteúdos de todas as áreas da programação e no segundo ano optamos pela especialização em uma das duas áreas macro, o Front-end ou o Back-end.
