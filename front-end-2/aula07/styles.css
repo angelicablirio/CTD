@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #222;
+  color: #e7e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+  width: 700px;
+  padding: 5px;
+  margin: 40px auto 0 auto;
+  color: #dbdbdb;
+}
+
+.cabecalho h1, .cabecalho p {
+  margin-bottom: 16px;
+}
+
+.container_form{
+  background-color: #2D2D2D;
+  width: 700px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container_form label{
+  font-size: 12px;
+  display: block;
+}
+
+.container_form input, .container_form select, .container_form textarea,.container_form select::placeholder {
+  background-color: #434343;
+  color: #e7e7e7;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 5px;
+}
+
+.container_select{
+  display: flex;
+  justify-content:stretch;
+  align-items: center;
+}
+.container_select select{
+  width: 42%;
+  margin-left: 5px;
+}
+
+.container_select label{
+  margin-left: 5px;
+}
+
+.container_form input{
+  width: 96%;
+}
+
+.container_form textarea{
+  height:250px;
+  width: 96%;
+}
+
+#text{
+  height: 16px;
+}
+
+#btnSubmit, #btnReset{
+  color: #e7e7e7;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#btnSubmit{
+  background-color: #23E06E;
+}
+
+#btnSubmit:hover{
+  background-color: #23e042;
+}
+
+#btnReset{
+  background-color: #e04f23;
+}
+
+#btnReset:hover{
+  background-color: #e03023;
+}

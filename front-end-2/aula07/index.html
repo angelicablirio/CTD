@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <div class="cabecalho">
+    <h1>Adicionar um novo post</h1>
+    <p>Crie um novo post para os usuários:</p>
+  </div> 
+
+  <div class="container_form">
+    <form>
+      <label for="title">Título</label>
+      <input id="title_post" type="text">
+
+      <div class="container_select">
+        <label for="category">Categoria</label>
+        <select  name="category">
+          <option selected disabled>Selecione uma opção</option>
+          <option value="Tecnologia">JavaScript</option>
+          <option value="Saúde">React JS</option>
+          <option value="Política">Angular</option>
+        </select>
+
+        <label for="tema">Tema</label>
+        <select  name="tema">
+          <option selected disabled>Selecione uma opção</option>
+          <option value="Tecnologia">Tecnologia</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Política">Política</option>
+        </select>
+      </div>
+
+      <label for="msg">Texto</label>
+      <textarea></textarea>
+
+      <label>Clique na área abaixo e aperte nas setas para ver o que acontece:</label>
+      <textarea id="text"></textarea>
+
+      <input type="reset" id="btnReset" value="Limpar"/>
+      <input type="submit" id="btnSubmit" value="Enviar"/>
+      
+    </form>
+  </div>
+  
+  <script src="./scripts.js"></script>
+</body>
+</html>
