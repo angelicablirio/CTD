@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+
+  <h1>Calculadora em JS</h1>
+
+  <div class="container_form">
+    <form>
+
+      <label for="valor1" >Insira o valor 1</label>
+      <input id="valor1" type="number">
+
+      <label for="valor2" >Insira o valor 2</label>
+      <input id="valor2" type="number">
+
+      <label for="operacao">Qual operação você deseja realizar?</label>
+      <div class="container_btn">
+        <button id="somar" >Somar</button>
+        <button id="subtrair" >Subtrair</button>
+        <button id="multiplicar" >Multiplicar</button>
+        <button id="dividir">Dividir</button>
+      </div>
+    </form>
+
+    <div class="container_res">
+      <h2>Resultado</h2>
+      <p></p>
+    </div>
+  
+    <button id="clear">Limpar</button>
+
+  </div>
+
+
+  
+  <script src="./scripts.js"></script>
+</body>
+</html>
