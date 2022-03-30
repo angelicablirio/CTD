@@ -1,0 +1,21 @@
+*{
+  outline: none;
+}
+
+input{
+  border: 1px solid black;
+}
+
+.campo-formulario small{
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.campo-formulario small.show{
+  display: block;
+}
+
+.campo-formulario .campo-invalido{
+  border: 1px solid red;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Aula 13 - Mesa de trabalho</title>
+</head>
+
+<body>
+
+  <form>
+    <h1>Inscrição para Hogwarts</h1>
+    <label>
+      Nome completo:
+      <input type="text" name="nome" id="name" autocomplete="off" pattern="^(\w{2,})+(\s(\w{2,})+)+$" maxlength="150" required>
+      <small id="nameErrorMsg">O campo deve conter nome e sobrenome, por favor preencha corretamente.</small>
+    </label>
+    <label>
+      Senha:
+      <input type="password" name="pass" id="pass" minlength="6" required>
+      <small id="passErrorMsg">A senha deve ter no mínimo 6 dígitos, por favor preencha corretamente.</small>
+    </label>
+    <label>
+      Telefone:
+      <input type="tel" name="tel" id="tel" required>
+      <small id="telErrorMsg">O telefone deve ter no mínimo 8 dígitos por favor preencha corretamente.</small>
+    </label>
+
+    <fieldset>
+      <legend>Hobbies: (No máximo 4)</legend>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesNetflix" value="Netflix">
+        Netflix
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesFutebol" value="Futebol">
+        Futebol
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesTenis" value="Tenis">
+        Tênis
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesAcademia"value="Academia">
+        Academia
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesVideoGame" value="Video Game">
+        Video Game
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesCozinha" value="Cozinha">
+        Cozinha
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesProgramacao" value="Programacao">
+        Programação
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesDesenho" value="Desenho">
+        Desenho
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesPintura" value="Pintura">
+        Pintura
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesGuitarra" value="Guitarra">
+        Guitarra
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesTeclado" value="Teclado">
+        Teclado
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesCostura" value="Costura">
+        Costura
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesLeitura" value="Leitura">
+        Leitura
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" id="hobbiesEscrever" value="Escrever">
+        Escrever
+      </label>
+      <small id="hobbiesErrorMsg">É permitido marcar apenas 4 opcões, desmarque uma para poder marcar outra opção.</small>
+    </fieldset>
+
+    <fieldset>
+      <legend>Nacionalidade</legend>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeArgentina" value="Argentina">
+        Argentina
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeColombiana" value="Colombia">
+        Colombia
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeBrasileira" value="Brasil"
+        >
+        Brasil
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeChilena" value="Chile">
+        Chile
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeVenezuelano" value="Venezuela">
+        Venezuela
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadePeru" value="Perú">
+        Perú
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeUruguai" value="Uruguai">
+        Uruguai
+      </label>
+      <label>
+        <input type="radio" name="nacionalidade" id="nacionalidadeParaguai" value="Paraguai">
+        Paraguai
+      </label>
+      <span id="msgNacionalidade">Desculpe, ainda não estamos recrutando magos para o Brasil, mas chegaremos em breve!</span>
+    </fieldset>
+
+    <button type="submit" disabled>Inscrever-me</button>
+  </form>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
