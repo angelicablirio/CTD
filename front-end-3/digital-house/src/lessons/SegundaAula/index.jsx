@@ -1,4 +1,4 @@
-import './styles.scss'
+import styles from './styles.module.scss'
 
 export function SegundaAula() {
   return(
