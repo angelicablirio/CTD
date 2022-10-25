@@ -1,5 +1,5 @@
-import { SegundaAula } from "./lessons/SegundaAula"
-import { TerceiraAula } from "./lessons/TerceiraAula";
+import { QuartaAula, TerceiraAula, SegundaAula } from "./lessons"
+
 import { Login } from "./pages/Login"
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
   <>    
     {/* <Login /> */}
     {/* <SegundaAula /> */}
-    <TerceiraAula />
+    {/* <TerceiraAula /> */}
+    <QuartaAula />
   </>
 
   );

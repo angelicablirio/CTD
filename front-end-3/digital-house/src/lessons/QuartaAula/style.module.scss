@@ -1,0 +1,37 @@
+.container{
+  color: rgb(251, 251, 237);
+  padding: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  .title{
+    text-align: center;
+    padding: 48px;
+  }
+
+  .componentsFinded{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+    li{
+      width: 424px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background-color: #303030;
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    img{
+      width: 400px;
+      height: 320px;
+
+    }
+  }
+
+
+}
