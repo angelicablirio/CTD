@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import components from './components';
+import components from '../../components/ListComponents/components';
         
 export function TerceiraAula() {
 
