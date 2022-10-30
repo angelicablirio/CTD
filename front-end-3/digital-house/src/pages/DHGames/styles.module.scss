@@ -1,0 +1,33 @@
+.container{
+  font-family: 'Poppins', sans-serif;
+  background-color:#101010;
+  padding-bottom: 200px;
+  
+
+
+  .containerCards{
+    width: 1146px;
+    margin: auto;
+  }
+
+  .title{
+    padding: 84px 0 24px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .horizontalList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .verticalList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

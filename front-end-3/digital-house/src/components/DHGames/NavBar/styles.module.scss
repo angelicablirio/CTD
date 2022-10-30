@@ -1,0 +1,41 @@
+.container{
+  width: 100%;
+  background-color: #202020;
+
+  .containerNavBar{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: auto;
+  
+  
+    h1{
+      font-size: 32px;
+    }
+  
+    ul{
+      display: flex;
+      gap: 24px;
+      color: rgba(255, 255, 255, 0.6);
+  
+      li{
+        font-size: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        cursor: pointer;
+        transition: all;
+        transition-duration: 200ms;
+  
+        &:hover{
+          color:#FF7A00;
+        }
+      }
+  
+    }
+  }
+
+}
+
