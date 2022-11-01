@@ -26,7 +26,7 @@ export function HorizontalCard(props){
               <p>{props.item.categories.join(', ')}</p>
             </div>
           </div>
-          <p className={styles.price}>{props.item.price}</p>
+          <span className={styles.price}><b>{props.item.price}</b>,00</span>
         </li>
   )
 }

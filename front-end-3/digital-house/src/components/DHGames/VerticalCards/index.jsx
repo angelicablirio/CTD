@@ -14,7 +14,7 @@ export function VerticalCard(props){
               </div>
               <div className={styles.prices}>
                 <p className={styles.oldPrice}>{props.item.oldPrice}</p>
-                <p className={styles.newPrice}>{props.item.newPrice}</p>
+                <span className={styles.newPrice}><b>{props.item.newPrice}</b>,00</span>
               </div>
             </div>
           </div>
