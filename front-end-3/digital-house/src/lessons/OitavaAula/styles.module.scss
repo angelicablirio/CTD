@@ -1,0 +1,137 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 60px;
+  align-items: center;
+
+  h1{
+    font-size: 40px;
+  }
+
+  .content{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    button{
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: none;
+      background-color: #d74242;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+.oitavaAula {
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+
+  &>h1 {
+
+      margin-bottom: 32px;
+
+  }
+
+  &>button {
+
+      color: black;
+      padding: 4px;
+      margin-right: 12px;
+
+  }
+
+  .wrappedForm{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #252525;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    width: 1000px;
+    margin: 0 auto 30px auto;
+
+    .formError{
+      input{
+        border: 1px solid #f84040;
+      }
+    }
+
+    form{
+
+      padding: 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+
+  
+      input{
+        color: white;
+        border-radius: 5px;
+        background-color: #252525;
+        padding: 8px;
+        margin-left: 10px;
+        border: 1px solid white;
+        width: 220px;
+      }
+    }
+  
+    button{
+      padding: 12px 32px;
+      border-radius: 6px;
+      background-color: #1e7dac;
+      color: white;
+      border: none;
+      cursor: pointer;
+      align-self: flex-end;
+      font-size: 16px;
+    }
+
+  }
+
+ 
+
+  .tittleWrapper {
+
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 42px;
+
+      button {
+
+          font-size: 16px;
+          color: white;
+          background-color: rgb(52, 148, 52);
+          padding: 12px 24px;
+          border: none;
+          border-radius: 8px;
+          transition: .2s ease-in-out;
+
+          &:hover {
+
+              filter: brightness(120%);
+              cursor: pointer;
+
+          }
+
+      }
+
+  }
+
+  .products {
+
+      display: flex;
+      //justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+
+  }
+
+}
