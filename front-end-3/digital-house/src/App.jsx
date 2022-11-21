@@ -1,4 +1,4 @@
-import { QuartaAula, TerceiraAula, SegundaAula, QuintaAula, SetimaAula, OitavaAula, DecimaAula} from "./lessons";
+import { QuartaAula, TerceiraAula, SegundaAula, QuintaAula, SetimaAula, OitavaAula, DecimaAula, DecimaQuartaAula, DecimaQuintaAula} from "./lessons";
 import { DHGames } from "./pages/DHGames";
 import { Login } from "./pages/Login";
 
@@ -13,7 +13,9 @@ function App() {
     {/* <DHGames /> */}
     {/* <SetimaAula /> */}
     {/* <OitavaAula /> */}
-    <DecimaAula />
+    {/* <DecimaAula /> */}
+    {/* <DecimaQuartaAula /> */}
+    <DecimaQuintaAula />
   </>
 
   );

@@ -5,3 +5,5 @@ export { QuintaAula } from "./QuintaAula";
 export { SetimaAula } from "./SetimaAula";
 export { OitavaAula } from "./OitavaAula";
 export { DecimaAula } from "./DecimaAula";
+export { DecimaQuartaAula } from "./DecimaQuartaAula";
+export { DecimaQuintaAula } from "./DecimaQuintaAula";
