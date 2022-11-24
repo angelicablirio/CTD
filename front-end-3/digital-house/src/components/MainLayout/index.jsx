@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
-import { linkslessons } from './linksLessons';
-import { linksPages } from './linksPages';
+import { linkslessons } from './links/linksLessons';
+import { linksPages } from './links/linksPages';
 import logoReact from '../../assets/imagesMainLayout/imageReact.png'
 import styles from './styles.module.scss';
         
