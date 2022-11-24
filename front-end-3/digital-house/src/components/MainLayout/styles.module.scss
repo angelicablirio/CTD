@@ -1,0 +1,63 @@
+.container{
+  background-color: #1f1f1f;
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "aside main main main main main";
+
+
+  .mainLayoutHeader {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      text-align: center;
+      grid-area: header;
+      padding: 42px;
+      border-bottom: 0.5px solid #edececb5;
+
+      img{
+        width: 80px;
+      }
+        
+    }
+
+    .menuAnside{
+      padding: 40px;
+      grid-area: aside;
+      height: 100vh;
+
+      p{
+        padding: 12px 0 8px 0;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      ul{
+        padding: 4px 0 4px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        list-style: none;
+
+        .link{
+          text-decoration: none;
+          color: #ffffffc9;
+         
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+      }
+    }
+
+
+  .mainLayout {
+      grid-area: main;
+      padding: 8px;
+      background-color: #363636d3;
+
+  }
+
+}
