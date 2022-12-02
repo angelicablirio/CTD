@@ -43,23 +43,3 @@ export function useFontSize() {
     return context
 
 }
-
-
-
-
-
-
-// const currentFontSizeSaved = localStorage.getItem('currentFontSize')
-//     const [currentFontSize, setCurrentFontSize] = useState(currentFontSizeSaved !== null && currentFontSizeSaved)
-
-//     function changeFontSize(fontSize) {
-
-//         if (fontSize !== currentFontSize) {
-//             setCurrentFontSize(fontSize)
-//             localStorage.setItem('currentFontSize', fontSize)
-//         } else
-//         {
-//             setCurrentFontSize('')
-//             localStorage.setItem('currentFontSize', '')
-//         }
-//     }
