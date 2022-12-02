@@ -2,23 +2,28 @@ import { Link, Outlet } from 'react-router-dom';
 import { linkslessons } from './links/linksLessons';
 import { linksPages } from './links/linksPages';
 import logoReact from '../../assets/imagesMainLayout/imageReact.png'
-import styles from './styles.module.scss';
+import './styles.scss';
+import { useTheme } from '../../hooks/useTheme'
+import { useFontSize } from '../../hooks/useFontSize';
         
 export const MainLayout = () => {
+
+  const { theme } = useTheme()
+  const { fontSize } = useFontSize()
         
   return (
-    <div className={styles.container}>
-      <header className={styles.mainLayoutHeader}>
+    <div className={`container ${theme} ${fontSize}`}>
+      <header className="mainLayoutHeader">
         <img src={logoReact} alt="" />
         <h1>Atividades Front end III</h1>
       </header>
-      <section className={styles.menuAnside} >
+      <section className="menuAnside" >
         <p>Lessons</p>
       <ul>
         {linkslessons.map((item, index)=>{
           return(
           <li key={index}>
-            <Link className={styles.link} to={item.link}>
+            <Link className="link" to={item.link}>
               {item.title}
             </Link>
           </li>)
@@ -29,14 +34,14 @@ export const MainLayout = () => {
         {linksPages.map((item, index)=>{
           return(
           <li key={index}>
-            <Link className={styles.link} to={item.link}>
+            <Link className="link"  to={item.link}>
               {item.title}
             </Link>
           </li>)
         })}
         </ul>
       </section>
-      <main className={styles.mainLayout}>
+      <main className="mainLayout">
         <Outlet />
       </main>
     </div>

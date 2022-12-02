@@ -1,10 +1,25 @@
 .container{
   background-color: #1f1f1f;
-  color: white;
+  color: rgba(255, 255, 255, 0.882);
   display: grid;
+  grid-template-columns: 300px 1fr;
   grid-template-areas:
-    "header header header header header header"
-    "aside main main main main main";
+    "header header "
+    "aside main";
+
+    &.dark{
+      background-color: #0e0e0e;
+
+    }
+
+    &.contrast{
+      color: white;
+      background-color: #000000;
+    }
+
+    &.accessibility{
+      font-size: 1.5em;
+    }
 
 
   .mainLayoutHeader {

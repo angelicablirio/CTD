@@ -1,7 +1,10 @@
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import { MainLayout } from "./components/MainLayout";
+import { TextProvider } from "./hooks/useFontSize";
+import { ThemeProvider } from "./hooks/useTheme";
 
 import { QuartaAula, TerceiraAula, SegundaAula, QuintaAula, SetimaAula, OitavaAula, DecimaAula, DecimaQuartaAula, DecimaQuintaAula} from "./lessons";
+import { Configurations } from "./pages/Configurations";
 import { DHGames } from "./pages/DHGames";
 import { Login } from "./pages/Login";
 
@@ -51,12 +54,21 @@ function App() {
       {
         path: 'dh-games',
         element:<DHGames />,
+      },
+      {
+        path: 'configurations',
+        element:<Configurations />,
       }
     ],
     }
   ]);
   return (
-    <RouterProvider router={appRouter} />
+    <ThemeProvider>
+      <TextProvider>
+        <RouterProvider router={appRouter} />
+      </TextProvider>
+    </ThemeProvider>
+    
 
   );
 };

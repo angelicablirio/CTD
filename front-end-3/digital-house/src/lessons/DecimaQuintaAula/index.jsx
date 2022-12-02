@@ -50,15 +50,16 @@ export function DecimaQuintaAula() {
                 <h1>Cadastrar endereços</h1>
 
                 <div>
-                  <label htmlFor="">Cep</label>
+                  <label>Cep</label>
                   <input
                       type="number"
                       value={cep}
                       onChange={event => searchCep(event.target.value)}
+                      aria-label="cep"
                   />
                 </div>
 
-                <button>Cadastrar</button>
+                <button aria-label="submit-button">Cadastrar</button>
 
             </form>
             <section className={styles.locations}>
